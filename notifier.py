@@ -3,11 +3,12 @@
 import json
 import subprocess
 import notify2
+import os
 
 
 def loadConfig():
     "Loads config from file"
-    with open('config.json') as config_file:
+    with open(os.path.dirname(__file__) + '/config.json') as config_file:
         return json.load(config_file)
 
 

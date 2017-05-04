@@ -5,7 +5,7 @@ You need to have python3 and python3-notify2 installed in your system. Modify co
 I check it only in Linux Mint, so feel free to modify it for your OS.
 
 # Run thrue cron
-Add folowing line to your crontab:
+Add folowing line to your crontab (you can use `crontab -e` command):
 ```
 * * * * * env DISPLAY=:0 /usr/bin/python3 /full/path/git_notifier/notifier.py
 ```
